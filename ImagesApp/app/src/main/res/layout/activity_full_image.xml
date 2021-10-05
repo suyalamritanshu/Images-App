@@ -21,4 +21,12 @@
         app:zoomage_maxScale="8"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:text="Share"
+        android:id="@+id/Share_Button"
+        />
+
 </RelativeLayout>
