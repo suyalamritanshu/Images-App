@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Images App</string>
+    <string name="img_src">img_src</string>
 </resources>

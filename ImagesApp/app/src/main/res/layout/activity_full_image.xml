@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DEE4E7"
     tools:context=".FullImageActivity">
 
     <com.jsibbold.zoomage.ZoomageView
@@ -22,11 +23,17 @@
         />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:text="Share"
         android:id="@+id/Share_Button"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:width="4dp"
+        android:padding="6dp"
+        android:background="@drawable/share_button_ripple"
+        android:text="Share" />
 
 </RelativeLayout>
