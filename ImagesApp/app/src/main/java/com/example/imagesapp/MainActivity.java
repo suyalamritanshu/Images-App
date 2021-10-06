@@ -7,9 +7,12 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.example.imagesapp.Api.ApiUtilities;
@@ -41,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        int colorCodeDark = Color.parseColor("#303030");
+        window.setStatusBarColor(colorCodeDark);
+
+        getSupportActionBar().setTitle("Popular Pictures");
         
         recyclerView = findViewById(R.id.recyclerView);
         list = new ArrayList<>();
