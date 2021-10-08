@@ -1,7 +1,7 @@
 # Images-App
-This is an images app where images are fetched from the unsplash API.
+Welcome folks,this is an images app where images are fetched from the unsplash API.
 
-The documentation for the use of the API - 
+For more information refer the documentation for the use of the API - 
 
 https://unsplash.com/documentation#list-photos
 
